@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.sec2;
 
 class SimpleClass {
 	void doSomething() {
