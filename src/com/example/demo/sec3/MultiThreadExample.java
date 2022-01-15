@@ -3,7 +3,7 @@ package com.example.demo.sec3;
 class Bank {
 	static int money = 0;
 	
-	static void addOnYen() {
+	static synchronized void addOnYen() {
 		money ++;
 	}
 }
