@@ -20,7 +20,7 @@ public class Book implements Comparable<Book> {
   }
 
   public static void main(String[] args) {
-    LinkedList<Book> bookList = new LinkedList<>();
+    List<Book> bookList = new LinkedList<>();
     bookList.add(new Book("7つの習慣", "スティーブン", 1500));
     bookList.add(new Book("無理ゲー社会", "橘玲", 1000));
     bookList.add(new Book("超客観力", "メンタリストDaiGo", 1600));
