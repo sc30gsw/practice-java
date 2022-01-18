@@ -23,13 +23,17 @@ public class CollectionExample {
     pointList.add(new Point(2, 9));
     pointList.add(new Point(3, 3));
 
-    for (Point p : pointList) {
-      p.x *= 2;
-      p.y *= 2;
-    }
+    // for (Point p : pointList) {
+    //   p.x *= 2;
+    //   p.y *= 2;
+    // }
 
-    for (Point p : pointList) {
-      p.printInfo();
-    }
+    pointList.forEach(p -> { p.x *=2; p.y *=2; });
+
+    // for (Point p : pointList) {
+    //   p.printInfo();
+    // }
+
+    pointList.forEach(p -> p.printInfo());
   }
 }
