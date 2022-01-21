@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class InputExample {
-  public static void main(String[] args) {11
+  public static void main(String[] args) {
     InputStreamReader in = new InputStreamReader(System.in);
     BufferedReader reader = new BufferedReader(in);
     try {
