@@ -9,11 +9,11 @@ public class FileWriteExample {
       File file = new File("/java/test.txt");
       FileWriter fw = new FileWriter(file);
       BufferedWriter bw = new BufferedWriter(fw);
+      PrintWriter pw = new PrintWriter(bw);
       for (int i = 0; i < 5; i ++)  {
-        bw.write("[" + i + "]");
-        bw.newLine();
+        pw.println();
       }
-      bw.close();
+      pw.close();
     } catch (IOException e) {
       System.out.println(e);
     }
