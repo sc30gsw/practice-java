@@ -7,13 +7,12 @@ public class FileWriteExample {
     try {
       //Windowsの場合Fileの引数は"C(D):/java/text.txt"となる
       File file = new File("/java/test.txt");
-      FileWriter fw = new FileWriter(file);
-      BufferedWriter bw = new BufferedWriter(fw);
-      PrintWriter pw = new PrintWriter(bw);
+      FileWriter fw = new FileWriter(file, true);
       for (int i = 0; i < 5; i ++)  {
-        pw.println();
+        //Windowsの改行の場合は¥r¥n
+        fw.write("[" + i + "]¥r");
       }
-      pw.close();
+      fw.close();
     } catch (IOException e) {
       System.out.println(e);
     }
