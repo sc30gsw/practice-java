@@ -15,7 +15,9 @@ class MyPanel extends JPanel implements MouseListener, MouseMotionListener{
 
   @Override
   public void mouseDragged(java.awt.event.MouseEvent e) {
-    System.out.println("マウスがドラッグされました（" + e.getX() + "、" + e.getY() + "）");
+    Graphics g = getGraphics();
+    g.setColor(Color.BLACK);
+    g.fillOval(e.getX() -2, e.getY() - 2, 5, 5);
   }
 
   @Override
